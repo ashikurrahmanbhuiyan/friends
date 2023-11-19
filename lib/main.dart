@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:friends/screens/auth/login_screen.dart';
-import 'package:friends/screens/home_screen.dart';
 
 late Size mq;
 
