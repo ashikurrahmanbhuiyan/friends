@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:friends/screens/auth/login_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
 
 late Size mq;
 
@@ -35,4 +38,11 @@ class MyApp extends StatelessWidget {
       home: login_screen(),
     );
   }
+}
+
+
+intitializeFirebase() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 }
